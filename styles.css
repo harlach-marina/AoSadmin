@@ -1,0 +1,145 @@
+#first-column,
+#second-column {
+	min-height: 100%;
+}
+@media (min-width: 768px) {
+	#first-column header,
+	#second-column header {
+		min-height: 70px;
+	}
+}
+#first-column {
+	background-color: #2f323a;
+    color: #fff;
+}
+#first-column header {
+	background-color: #111;
+}
+#first-column #menu-list {
+	padding: 0;
+}
+ul {
+    margin-left: 0; 
+    padding-left: 0;
+}
+li {
+	list-style-type: none; 
+}
+#first-column #menu-list li {
+    padding: 15px 0 15px 20px;
+    text-transform: uppercase;
+    font-size: 0.78em;
+    border-left: solid 3px transparent;
+}
+#first-column #menu-list li.active {
+    background-color: #25272E;
+}
+#first-column #menu-list li:hover {
+    border-left: solid 3px #f34d4d;
+    background-color: #25272E;
+}
+#first-column #menu-list li a,
+#first-column #menu-list li a:hover,
+#first-column #menu-list li a:focus {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+#first-column #menu-list li a:hover {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: inherit;
+
+}
+#first-column #menu-list li a+span {
+    right: 5px;
+    position: absolute;
+    background-color: #f34d4d;
+}
+#first-column #menu-list li i+a{
+    margin-left: 5px; 
+}
+#first-column #menu-list ul hr {
+	margin-top: 0;
+}
+#second-column header {
+	border-bottom: 1px solid #bbb;
+}
+#second-column header>div {
+	padding: 5px 0 0 0;
+}
+#second-column header>div:last-of-type {
+	padding-left: 10px;
+}
+#second-column header>div:first-of-type span {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+	color: #bbb;
+}
+#second-column header>div:first-of-type a.active span {
+	color: #f34d4d;
+}
+#second-column header #requests ul li label,
+#second-column header #user-type ul li label {
+	font-weight: normal;
+}
+#second-column header #requests ul {
+	width: 100%;
+	float: left;
+	border-right: 1px solid #bbb;
+}
+#second-column header #user-type ul {
+	float: right;
+}
+#second-column header .stylish-input-group .input-group-addon,
+#second-column header .stylish-input-group .input-group-addon button {
+	background-color: transparent;
+}
+#second-column header .stylish-input-group input {
+	border-right: none;
+}
+#second-column header .stylish-input-group .input-group-addon button {
+	border: none;
+	padding: 0;
+}
+#main-content .item {
+	background-color: #ddd;
+	border: 1px solid #d2d2d2;
+	margin: 20px 0;
+	padding: 10px;
+	box-shadow: 1px 5px 10px rgba(0,0,0,.25);
+	border-radius: 3px;
+}
+
+#main-content .item .row {
+	margin: 0;
+}
+#main-content .item small {
+	color: #888;
+}
+#main-content .item .avatar {
+	padding: 0;
+}
+#main-content .item .money {
+	text-align: center;
+}
+#main-content .item .money .glyphicon{
+	font-size: 2em;
+}
+#main-content .item .description {
+	font-style: italic;
+	color: #888;
+
+}
+#main-content .item .discon button {
+	width: 100%;
+}
+#main-content .item.active,
+#main-content .item:hover {
+	border-color: #f34d4d;
+}
+#main-content .item.active  .money .glyphicon,
+#main-content .item:hover  .money .glyphicon{
+	color: rgba(243, 77, 77, 0.77);
+	text-shadow: #a0a0a0 0.1em 0.1em 0.1em;
+}

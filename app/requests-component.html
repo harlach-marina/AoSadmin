@@ -1,0 +1,51 @@
+<div *ngFor="let user of users">
+	<div class="col-md-4">
+		<div class="item">
+			<div class="row">
+				<div class="col-md-3 avatar">
+					<img class="img-responsive img-circle" src="./app/img/avatar.png">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<p>{{user.name}}</p>
+					<small>{{user.date}}</small>
+				</div>
+				<div class="col-md-3 money">
+					<br>
+					<p><i class="glyphicon glyphicon-piggy-bank"></i></p>
+					<p>{{user.budget}}&euro;</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>{{user.styles}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>{{user.email}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>+375{{user.phone}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>Disconnect with:<span><img style="width: 30px;" class="img-circle" src="./app/img/avatar.png"> {{user.stylistName}}</span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 description">
+					<p>{{user.description}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-7 discon">
+					<button type="button" class="btn btn-danger">Disconnect</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

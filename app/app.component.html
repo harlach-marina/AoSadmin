@@ -1,0 +1,58 @@
+<aside class="col-sm-4 col-md-3 col-lg-2" id="first-column">
+	<div class="inner row">
+		<header class="col-md-12 text-center">
+			<h2>Agents Of Style</h2>
+		</header>
+		<div class="col-md-12" id="menu-list">
+			<ul>
+				<li><a routerLink="/new-stylist">New stylists</a><span class="badge">77</span></li>
+				<li class="active"><a routerLink="/requests">Requests for disconnetion</a><span class="badge">23</span></li>
+				<li><a routerLink="/styles">Styles</a></li>
+				<li><a routerLink="/questions">Questions</a></li>
+				<li><a routerLink="/balance">Balance</a></li>
+				<hr>
+				<li><i class="glyphicon glyphicon-cog"></i><a routerLink="/settings">Settings</a></li>
+			</ul>
+		</div>
+	</div>
+</aside>
+<div class="col-sm-8 col-md-9 col-lg-10" id="second-column">
+	<div class="inner row">
+		<header class="col-md-12">
+			<div class="col-sm-2 col-md-2 col-lg-1">
+				<a href="#" class="active"><span class="glyphicon glyphicon-th-large"></span></a>
+				<a href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+			</div>
+			<div class="col-sm-5 col-md-offset-5 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-3" id="requests">
+				<!-- <legend>Requests</legend> -->
+				<ul>
+					<li><input id="new" type="checkbox"><label for="new">New</label></li>
+					<li><input id="disconnected" type="checkbox"><label for="disconnected">Disconnected</label></li>
+				</ul>
+			    
+			    
+			</div>
+			<div class="col-sm-5 col-md-3 col-lg-2" id="user-type">
+				<!-- <legend>User Type</legend> -->
+			    <ul>
+					<li><input id="shopper" type="checkbox"><label for="shopper">Shopper</label></li>
+					<li><input id="stylist" type="checkbox"><label for="stylist">Stylist</label></li>
+				</ul>
+			</div>
+			<div class="col-sm-7 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1">
+				<div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+			</div>
+		</header>
+		<div class="col-md-12" id="main-content">
+			<router-outlet></router-outlet>
+			<discon-req></discon-req>
+		</div>
+	</div>
+</div>
