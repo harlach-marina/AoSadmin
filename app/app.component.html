@@ -5,13 +5,13 @@
 		</header>
 		<div class="col-md-12" id="menu-list">
 			<ul>
-				<li><a routerLink="/new-stylist">New stylists</a><span class="badge">77</span></li>
-				<li class="active"><a routerLink="/requests">Requests for disconnetion</a><span class="badge">23</span></li>
-				<li><a routerLink="/styles">Styles</a></li>
-				<li><a routerLink="/questions">Questions</a></li>
-				<li><a routerLink="/balance">Balance</a></li>
+				<li [routerLinkActive]="['active']"><a routerLink="/new-stylist">New stylists</a><span class="badge">77</span></li>
+				<li [routerLinkActive]="['active']"><a routerLink="/requests">Requests for disconnetion</a><span class="badge">23</span></li>
+				<li [routerLinkActive]="['active']"><a routerLink="/styles">Styles</a></li>
+				<li [routerLinkActive]="['active']"><a routerLink="/questions">Questions</a></li>
+				<li [routerLinkActive]="['active']"><a routerLink="/balance">Balance</a></li>
 				<hr>
-				<li><i class="glyphicon glyphicon-cog"></i><a routerLink="/settings">Settings</a></li>
+				<li [routerLinkActive]="['active']"><i class="glyphicon glyphicon-cog"></i><a routerLink="/settings">Settings</a></li>
 			</ul>
 		</div>
 	</div>
@@ -19,9 +19,11 @@
 <div class="col-sm-8 col-md-9 col-lg-10" id="second-column">
 	<div class="inner row">
 		<header class="col-md-12">
-			<div class="col-sm-2 col-md-2 col-lg-1">
-				<a href="#" class="active"><span class="glyphicon glyphicon-th-large"></span></a>
-				<a href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+			<div class="col-sm-2 col-md-2 col-lg-1 view-type">
+				<div class="col-md-12">
+					<a href="#" class="active"><span class="glyphicon glyphicon-th-large"></span></a>
+					<a href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+				</div>
 			</div>
 			<div class="col-sm-5 col-md-offset-5 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-3" id="requests">
 				<!-- <legend>Requests</legend> -->
@@ -52,7 +54,7 @@
 		</header>
 		<div class="col-md-12" id="main-content">
 			<router-outlet></router-outlet>
-			<discon-req></discon-req>
+			<!-- <discon-req></discon-req> -->
 		</div>
 	</div>
 </div>

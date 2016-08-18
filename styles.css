@@ -32,11 +32,13 @@ li {
     border-left: solid 3px transparent;
 }
 #first-column #menu-list li.active {
-    background-color: #25272E;
+	background-color: #25272E;
 }
 #first-column #menu-list li:hover {
     border-left: solid 3px #f34d4d;
     background-color: #25272E;
+    transition-property: background-color;
+  	transition-duration: 0.3s;
 }
 #first-column #menu-list li a,
 #first-column #menu-list li a:hover,
@@ -131,6 +133,15 @@ li {
 	color: #888;
 
 }
+#main-content .item .outfits {
+	overflow: hidden;
+	height: 100px;
+
+}
+#main-content .item .outfits img{
+	margin: 0;
+	padding: 0;
+}
 #main-content .item .discon button {
 	width: 100%;
 }
@@ -142,4 +153,11 @@ li {
 #main-content .item:hover  .money .glyphicon{
 	color: rgba(243, 77, 77, 0.77);
 	text-shadow: #a0a0a0 0.1em 0.1em 0.1em;
+}
+.clients {
+	display: inline-block;
+	height: 30px;
+}
+.view-type div {
+	padding-top: 10px;
 }

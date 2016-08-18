@@ -1,8 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES, ActivatedRoute } from '@angular/router';
 
 @Component({
   // selector: 'discon-req',
-  templateUrl: './app/requests-component.html'
+  templateUrl: './app/requests-component.html',
+  directives: [ROUTER_DIRECTIVES]
 })
 export class RequestsComponent {
 	users = [
@@ -15,6 +17,7 @@ export class RequestsComponent {
 		      	stylistName: "Dyana Gurtskaya",
 		      	phone: '293342985',
 		      	budget: '234',
+		      	clients: ['Anna', 'Piter', 'Symons', 'Kate']
       		},
       		{
       			name: 'Ariana Piaffer',
@@ -24,7 +27,7 @@ export class RequestsComponent {
 		      	description: "No sense to create outfit for her. She haven't answered my calls for a long time.",
 		      	stylistName: "Dyana Gurtskaya",
 		      	phone: '254324345',
-		      	budget: '1009',
+		      	budget: '1009'
       		}
       	]
 }
