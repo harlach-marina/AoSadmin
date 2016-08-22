@@ -22,11 +22,11 @@ import { RequestsComponent } from './requests.component';
 import { NewStylistComponent } from './new-stylist.component';
 
 const routes: Routes = [
-	{
-		path: '',
-		redirectTo: '/requests',
-		pathMatch: 'full'
-	},
+	// {
+	// 	path: '',
+	// 	redirectTo: '/requests',
+	// 	pathMatch: 'full'
+	// },
 	{ path: 'requests', component: RequestsComponent },
 	{ path: 'new-stylist', component: NewStylistComponent }
 ];
